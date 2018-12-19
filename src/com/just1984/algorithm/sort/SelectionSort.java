@@ -4,6 +4,10 @@ import com.just1984.algorithm.util.SortUtil;
 
 public class SelectionSort extends AbstractSort {
 
+    public SelectionSort() {
+        super.setName("选择");
+    }
+
     @Override
     public void sortArray(int[] array) {
         int len = array.length;

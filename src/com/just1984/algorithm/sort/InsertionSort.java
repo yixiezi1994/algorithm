@@ -2,6 +2,10 @@ package com.just1984.algorithm.sort;
 
 public class InsertionSort extends AbstractSort {
 
+    public InsertionSort() {
+        super.setName("插入");
+    }
+
     @Override
     protected void sortArray(int[] array) {
         int len = array.length;
