@@ -8,7 +8,7 @@ import java.util.Arrays;
 public class TestMain {
 
     public static void main(String[] args) {
-        int[] array = RandomArrayGenerator.generate(1000000, 0, 100);
+        int[] array = RandomArrayGenerator.generate(500000, 0, 10);
         /*int[] array1 = Arrays.copyOf(array, array.length);
         Sort selectionSort = new SelectionSort();
         Sort insertionSort = new InsertionSort();
@@ -16,7 +16,7 @@ public class TestMain {
         insertionSort.sort(array1);
         Sort mergeSort = new MergeSortBU();
         mergeSort.sort(array);*/
-        Sort quickSort = new QuickSort();
+        Sort quickSort = new QuickSortTwoWay();
         quickSort.sort(array);
     }
 

@@ -13,7 +13,7 @@ public class QuickSort extends AbstractSort {
         sort(array, 0, array.length - 1);
     }
 
-    private void sort(int[] array, int l, int r) {
+    protected void sort(int[] array, int l, int r) {
         if (l >= r) return;
         int p = partition(array, l, r);
         sort(array, l, p - 1);
@@ -27,7 +27,11 @@ public class QuickSort extends AbstractSort {
      * @param r
      * @return
      */
-    private int partition(int[] array, int l, int r) {
+    protected int partition(int[] array, int l, int r) {
+        /**
+         * 防止数组在极端有序的情况下排序性能问题，取随机种子
+         */
+        SortUtil.swap(array, l, (int) (Math.random() * (r - l + 1)) + l);
         int f = array[l];
         int j = l;
         for (int i = l; i <= r; i++) {
@@ -39,4 +43,5 @@ public class QuickSort extends AbstractSort {
         SortUtil.swap(array, j, l);
         return j;
     }
+
 }
