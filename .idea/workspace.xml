@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92998b07-3328-43cb-b4d4-43ca11d43a13" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/just1984/algorithm/TestMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/just1984/algorithm/TestMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/just1984/algorithm/sort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/just1984/algorithm/sort/QuickSort.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/algorithm$TestMain.ic" NAME="TestMain Coverage Results" MODIFIED="1545317540665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/algorithm$TestMain.ic" NAME="TestMain Coverage Results" MODIFIED="1545319519034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.just1984.algorithm.*</FILTER>
     </SUITE>
   </component>
@@ -36,17 +34,17 @@
       <file leaf-file-name="QuickSort.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/just1984/algorithm/sort/QuickSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="33" column="73" selection-start-line="33" selection-start-column="73" selection-end-line="33" selection-end-column="73" />
+            <state relative-caret-position="204">
+              <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuickSortTwoWay.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/just1984/algorithm/sort/QuickSortTwoWay.java">
+      <file leaf-file-name="QuickSortThreeWay.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/just1984/algorithm/sort/QuickSortThreeWay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+            <state relative-caret-position="396">
+              <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -87,6 +85,7 @@
         <option value="$PROJECT_DIR$/src/com/just1984/algorithm/sort/MergeSortBU.java" />
         <option value="$PROJECT_DIR$/src/com/just1984/algorithm/sort/QuickSort.java" />
         <option value="$PROJECT_DIR$/src/com/just1984/algorithm/sort/QuickSortTwoWay.java" />
+        <option value="$PROJECT_DIR$/src/com/just1984/algorithm/sort/QuickSortThreeWay.java" />
         <option value="$PROJECT_DIR$/src/com/just1984/algorithm/TestMain.java" />
       </list>
     </option>
@@ -111,7 +110,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="85" />
     <option name="y" value="25" />
     <option name="width" value="1750" />
@@ -288,12 +287,12 @@
       <updated>1545140755837</updated>
       <workItem from="1545140757812" duration="6287000" />
       <workItem from="1545225065153" duration="6934000" />
-      <workItem from="1545316148518" duration="3115000" />
+      <workItem from="1545316148518" duration="5136000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16336000" />
+    <option name="totallyTimeSpent" value="18357000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -309,12 +308,12 @@
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.32956153" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49934897" visible="true" weight="0.3281471" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49934897" weight="0.3281471" />
       <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3297587" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32909605" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3281471" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25670242" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25670242" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -473,8 +472,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/just1984/algorithm/sort/QuickSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="33" column="73" selection-start-line="33" selection-start-column="73" selection-end-line="33" selection-end-column="73" />
+        <state relative-caret-position="204">
+          <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/just1984/algorithm/sort/QuickSortThreeWay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
         </state>
       </provider>
     </entry>
