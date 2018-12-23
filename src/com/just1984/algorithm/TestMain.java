@@ -21,13 +21,18 @@ public class TestMain {
         Sort quickSort = new QuickSortThreeWay();
         quickSort.sort(array);*/
 
-        MaxHeap heap = new MaxHeap(100);
+        /*MaxHeap heap = new MaxHeap(100);
         for (int i = 0; i < 100; i++) {
             heap.insert(RandomNumberGenerator.getRandomInt(0, 100));
         }
         heap.print();
         System.out.println(heap.extractMax());
-        heap.print();
+        heap.print();*/
+
+        int[] array = RandomArrayGenerator.generate(1000000, 0, 100);
+        Sort heapSort = new HeapSort();
+        heapSort.sort(array);
+        //System.out.println(Arrays.toString(array));
     }
 
 }

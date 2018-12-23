@@ -18,6 +18,20 @@ public class MaxHeap {
         this.capacity = capacity;
     }
 
+    public MaxHeap(int[] array) {
+        int len = array.length;
+        this.data = new int[len + 1];
+        this.capacity = len;
+        for (int i = 0; i < len; i++) {
+            data[i + 1] = array[i];
+        }
+        this.count = len;
+
+        for (int i = count / 2; i >= 1; i--) {
+            shiftDown(i);
+        }
+    }
+
     public int size() {
         return count;
     }
