@@ -40,7 +40,7 @@ public class TestMain {
         BinarySearch search = new BinarySearch();
         int result = search.search(arr, 2);
         System.out.println(result);*/
-        BinarySearchTree<Integer, Integer> binarySearchTree = new BinarySearchTree<>();
+        /*BinarySearchTree<Integer, Integer> binarySearchTree = new BinarySearchTree<>();
         binarySearchTree.insert(1,1);
         binarySearchTree.insert(10,10);
         binarySearchTree.insert(8,8);
@@ -52,7 +52,10 @@ public class TestMain {
         binarySearchTree.insert(12,12);
         System.out.println(binarySearchTree.size());
         Integer result = binarySearchTree.search(2);
-        System.out.println(result);
+        System.out.println(result);*/
+
+        boolean[][] arr = new boolean[2][2];
+        System.out.println(arr[1][0]);
     }
 
 }
