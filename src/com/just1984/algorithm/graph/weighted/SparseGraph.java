@@ -1,11 +1,8 @@
-package com.just1984.algorithm.graph;
+package com.just1984.algorithm.graph.weighted;
 
 import java.util.*;
 
-/**
- * 稀疏图（邻接表）
- */
-public class SparseGraph implements Graph {
+public class SparseGraph implements WeightedGraph {
 
     /**
      * 顶点数
@@ -22,7 +19,7 @@ public class SparseGraph implements Graph {
      */
     private boolean isDirected;
 
-    private List<Set<Integer>> g;
+    private List<Set<Edge>> g;
 
     public SparseGraph(int n, boolean isDirected) {
         this.n = n;
@@ -46,23 +43,20 @@ public class SparseGraph implements Graph {
 
     @Override
     public boolean hasEdge(int v, int w) {
-        if (v >= 0 && v < n && w >= 0 && w < n) {
-            return g.get(v).contains(w);
-        }
-        return false;
+        return g.get(v).stream().anyMatch(item -> item.other(v) == w);
     }
 
     @Override
-    public void addEdge(int v, int w) {
+    public void addEdge(int v, int w, int weight) {
         if (hasEdge(v, w)) return;
         if (v >= 0 && v < n && w >= 0 && w < n) {
-            g.get(v).add(w);
+            g.get(v).add(new Edge(v, w, weight));
             m++;
         }
     }
 
     @Override
-    public Iterator<Integer> getVIterator(int v) {
+    public Iterator<Edge> getVIterator(int v) {
         return g.get(v).iterator();
     }
 }

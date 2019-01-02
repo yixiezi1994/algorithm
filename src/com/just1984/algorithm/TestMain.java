@@ -1,5 +1,6 @@
 package com.just1984.algorithm;
 
+import com.just1984.algorithm.graph.weighted.Edge;
 import com.just1984.algorithm.heap.MaxHeap;
 import com.just1984.algorithm.search.BinarySearch;
 import com.just1984.algorithm.search.BinarySearchTree;
@@ -7,8 +8,10 @@ import com.just1984.algorithm.sort.*;
 import com.just1984.algorithm.util.RandomArrayGenerator;
 import com.just1984.algorithm.util.RandomNumberGenerator;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
+import java.util.List;
 
 public class TestMain {
 
@@ -57,11 +60,11 @@ public class TestMain {
 
         /*boolean[][] arr = new boolean[2][2];
         System.out.println(arr[1][0]);*/
-        LinkedList<Integer> q = new LinkedList<>();
-        q.add(1);
-        q.add(2);
-        System.out.println(q.poll());
-        System.out.println(q.size());
+        List<Edge> list = new ArrayList<>(8);
+        for (int i = 0; i < 8; i++) {
+            list.add(new Edge(1, 1, i));
+        }
+        System.out.println(list.stream().anyMatch(item -> item.weight() == 7));
     }
 
 }

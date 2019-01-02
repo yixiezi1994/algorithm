@@ -1,4 +1,4 @@
-package com.just1984.algorithm.graph;
+package com.just1984.algorithm.graph.common;
 
 import java.util.Iterator;
 
