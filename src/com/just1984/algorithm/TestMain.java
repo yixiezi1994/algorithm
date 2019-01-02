@@ -8,6 +8,7 @@ import com.just1984.algorithm.util.RandomArrayGenerator;
 import com.just1984.algorithm.util.RandomNumberGenerator;
 
 import java.util.Arrays;
+import java.util.LinkedList;
 
 public class TestMain {
 
@@ -54,8 +55,13 @@ public class TestMain {
         Integer result = binarySearchTree.search(2);
         System.out.println(result);*/
 
-        boolean[][] arr = new boolean[2][2];
-        System.out.println(arr[1][0]);
+        /*boolean[][] arr = new boolean[2][2];
+        System.out.println(arr[1][0]);*/
+        LinkedList<Integer> q = new LinkedList<>();
+        q.add(1);
+        q.add(2);
+        System.out.println(q.poll());
+        System.out.println(q.size());
     }
 
 }
